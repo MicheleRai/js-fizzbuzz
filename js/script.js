@@ -10,16 +10,16 @@ const eleSquares = document.querySelector('.squares');
 for (let i=1; i <= 100; i++){
     if( (i % 3)==0 && (i % 5)==0 ) {
         console.log("FizzBuzz");
-        eleSquares.innerHTML += `<div class="sq">FizzBuzz</div>`;
+        eleSquares.innerHTML += `<div class="sq green">FizzBuzz</div>`;
 
     } else if( i % 3 == 0 ) {
         console.log("Fizz");
-        eleSquares.innerHTML += `<div class="sq">Fizz</div>`;
+        eleSquares.innerHTML += `<div class="sq purple">Fizz</div>`;
     } else  if( i % 5 == 0 ) {
         console.log("Buzz");
-        eleSquares.innerHTML += `<div class="sq">Buzz</div>`;
+        eleSquares.innerHTML += `<div class="sq yellow">Buzz</div>`;
 
-    } else{
+    } else {
         console.log(i);
         eleSquares.innerHTML += `<div class="sq">${i}</div>`;
     }
